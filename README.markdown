@@ -1,3 +1,7 @@
+### Kudu.Client.PCL
+
+This is a trial to transform the Kudu.Client project to a PCL so it can be used in different platforms. Below is the default description page of the project Kudu for more information.
+
 ### Kudu
 
 Kudu is the engine behind [git deployments in Azure Web Sites](https://www.windowsazure.com/en-us/develop/nodejs/common-tasks/publishing-with-git/). It can also run outside of Azure.
