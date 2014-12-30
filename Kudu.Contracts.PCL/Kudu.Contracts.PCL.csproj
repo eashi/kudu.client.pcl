@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CE289333-2CB7-47C7-8137-B82BC0E26F92}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kudu.Contracts.PCL</RootNamespace>
+    <AssemblyName>Kudu.Contracts.PCL</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\Common\Constants.cs">
+      <Link>Constants.cs</Link>
+    </Compile>
+    <Compile Include="Commands\CommandEvent.cs" />
+    <Compile Include="Commands\CommandEventType.cs" />
+    <Compile Include="Commands\CommandResult.cs" />
+    <Compile Include="Commands\ICommandExecutor.cs" />
+    <Compile Include="Deployment\DeploymentFailedException.cs" />
+    <Compile Include="Deployment\DeployResult.cs" />
+    <Compile Include="Deployment\DeployStatus.cs" />
+    <Compile Include="Deployment\IAutoSwapHandler.cs" />
+    <Compile Include="Deployment\IDeploymentEnvironment.cs" />
+    <Compile Include="Deployment\IDeploymentManager.cs" />
+    <Compile Include="Deployment\IDeploymentManagerFactory.cs" />
+    <Compile Include="Deployment\IDeploymentStatusFile.cs" />
+    <Compile Include="Deployment\IDeploymentStatusManager.cs" />
+    <Compile Include="Deployment\ILogger.cs" />
+    <Compile Include="Deployment\LogEntry.cs" />
+    <Compile Include="Deployment\LogEntryType.cs" />
+    <Compile Include="Diagnostics\ApplicationLogEntry.cs" />
+    <Compile Include="Diagnostics\ProcessInfo.cs" />
+    <Compile Include="Diagnostics\ProcessModuleInfo.cs" />
+    <Compile Include="Diagnostics\ProcessThreadInfo.cs" />
+    <Compile Include="Diagnostics\RuntimeInfo.cs" />
+    <Compile Include="Editor\VfsStatEntry.cs" />
+    <Compile Include="HashHelpers.cs" />
+    <Compile Include="Hooks\ConflictException.cs" />
+    <Compile Include="Hooks\HooksEventTypes.cs" />
+    <Compile Include="Hooks\IWebHooksManager.cs" />
+    <Compile Include="Hooks\WebHook.cs" />
+    <Compile Include="IEnvironment.cs" />
+    <Compile Include="Infrastructure\IOperationLock.cs" />
+    <Compile Include="Infrastructure\LockExtensions.cs" />
+    <Compile Include="Infrastructure\LockOperationException.cs" />
+    <Compile Include="Infrastructure\RS.cs" />
+    <Compile Include="Infrastructure\StringUtils.cs" />
+    <Compile Include="Jobs\ContinuousJob.cs" />
+    <Compile Include="Jobs\IContinuousJobsManager.cs" />
+    <Compile Include="Jobs\IJobsManager.cs" />
+    <Compile Include="Jobs\IScriptHost.cs" />
+    <Compile Include="Jobs\ITriggeredJobsManager.cs" />
+    <Compile Include="Jobs\JobBase.cs" />
+    <Compile Include="Jobs\JobSettings.cs" />
+    <Compile Include="Jobs\JobSettingsKeys.cs" />
+    <Compile Include="Jobs\TriggeredJob.cs" />
+    <Compile Include="Jobs\TriggeredJobHistory.cs" />
+    <Compile Include="Jobs\TriggeredJobRun.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings\DeploymentSettingsExtension.cs" />
+    <Compile Include="Settings\DiagnosticsSettings.cs" />
+    <Compile Include="Settings\IDeploymentSettingsManager.cs" />
+    <Compile Include="Settings\ISettingsProvider.cs" />
+    <Compile Include="Settings\SettingsKeys.cs" />
+    <Compile Include="SiteExtensions\ISiteExtensionManager.cs" />
+    <Compile Include="SiteExtensions\SiteExtensionInfo.cs" />
+    <Compile Include="SourceControl\ChangeSet.cs" />
+    <Compile Include="SourceControl\Git\IGitServer.cs" />
+    <Compile Include="SourceControl\IFileFinder.cs" />
+    <Compile Include="SourceControl\IRepository.cs" />
+    <Compile Include="SourceControl\IRepositoryFactory.cs" />
+    <Compile Include="SourceControl\RepositoryInfo.cs" />
+    <Compile Include="SourceControl\RepositoryType.cs" />
+    <Compile Include="SourceControl\ScmType.cs" />
+    <Compile Include="SSHKey\ISSHKeyManager.cs" />
+    <Compile Include="Tracing\ITracer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.7\lib\portable-net45+wp80+win8+wpa81+aspnetcore50\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
