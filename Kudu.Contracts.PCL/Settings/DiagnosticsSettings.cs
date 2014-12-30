@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
-using System.Diagnostics;
+using System.ComponentModel;
 using System.Linq;
-using System.Runtime.Serialization;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
@@ -114,5 +113,24 @@ namespace Kudu.Contracts.PCL.Settings
         {
             return _settings.Union(_extraSettings).GetEnumerator();
         }
+    }
+
+    public enum TraceEventType
+    {
+        Critical = 1,
+        Error = 2,
+        Warning = 4,
+        Information = 8,
+        Verbose = 16,
+        [EditorBrowsable(EditorBrowsableState.Advanced)]
+        Start = 256,
+        [EditorBrowsable(EditorBrowsableState.Advanced)]
+        Stop = 512,
+        [EditorBrowsable(EditorBrowsableState.Advanced)]
+        Suspend = 1024,
+        [EditorBrowsable(EditorBrowsableState.Advanced)]
+        Resume = 2048,
+        [EditorBrowsable(EditorBrowsableState.Advanced)]
+        Transfer = 4096,
     }
 }
