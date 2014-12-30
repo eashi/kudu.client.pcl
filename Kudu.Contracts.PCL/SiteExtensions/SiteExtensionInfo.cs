@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using NuGet;
 using Newtonsoft.Json;
 
 namespace Kudu.Contracts.PCL.SiteExtensions
@@ -38,23 +37,6 @@ namespace Kudu.Contracts.PCL.SiteExtensions
             LocalIsLatestVersion = info.LocalIsLatestVersion;
             LocalPath = info.LocalPath;
             InstalledDateTime = info.InstalledDateTime;
-        }
-
-        public SiteExtensionInfo(IPackage package)
-        {
-            Id = package.Id;
-            Title = package.Title;
-            Type = SiteExtensionType.Gallery;
-            Summary = package.Summary;
-            Description = package.Description;
-            Version = package.Version == null ? null : package.Version.ToString();
-            ProjectUrl = package.ProjectUrl == null ? null : package.ProjectUrl.ToString();
-            IconUrl = package.IconUrl == null ? "https://www.siteextensions.net/Content/Images/packageDefaultIcon-50x50.png" : package.IconUrl.ToString();
-            LicenseUrl = package.LicenseUrl == null ? null : package.LicenseUrl.ToString();
-            Authors = package.Authors;
-            PublishedDateTime = package.Published;
-            IsLatestVersion = package.IsLatestVersion;
-            DownloadCount = package.DownloadCount;
         }
 
         [JsonProperty(PropertyName = "id")]
