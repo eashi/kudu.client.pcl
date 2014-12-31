@@ -5,7 +5,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Kudu.Client.Infrastructure;
-using Kudu.Contracts.SiteExtensions;
+using Kudu.Contracts.PCL.SiteExtensions;
 using Newtonsoft.Json.Linq;
 
 namespace Kudu.Client.SiteExtensions

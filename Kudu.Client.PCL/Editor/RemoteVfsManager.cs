@@ -6,7 +6,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using Kudu.Client.Infrastructure;
-using Kudu.Contracts.Editor;
+using Kudu.Contracts.PCL.Editor;
 
 namespace Kudu.Client.Editor
 {

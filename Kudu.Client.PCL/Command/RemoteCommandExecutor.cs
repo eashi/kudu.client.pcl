@@ -1,5 +1,6 @@
 ﻿using Kudu.Client.Infrastructure;
 using Kudu.Core;
+using Kudu.Core.PCL;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Net;

@@ -3,8 +3,7 @@ using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Kudu.Client.Infrastructure;
-using Kudu.Contracts.SourceControl;
-using Kudu.Core.SourceControl;
+using Kudu.Core.PCL.SourceControl;
 
 namespace Kudu.Client.Deployment
 {

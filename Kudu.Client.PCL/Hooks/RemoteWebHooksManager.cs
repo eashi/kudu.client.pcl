@@ -4,7 +4,7 @@ using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Kudu.Client.Infrastructure;
-using Kudu.Core.Hooks;
+using Kudu.Core.PCL.Hooks;
 
 namespace Kudu.Client.Diagnostics
 {

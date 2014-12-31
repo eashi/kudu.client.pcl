@@ -7,7 +7,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using Kudu.Client.Infrastructure;
-using Kudu.Contracts.Jobs;
+using Kudu.Contracts.PCL.Jobs;
 
 namespace Kudu.Client.Jobs
 {

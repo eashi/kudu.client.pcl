@@ -6,7 +6,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Kudu.Client.Infrastructure;
-using Kudu.Core.Diagnostics;
+using Kudu.Core.PCL.Diagnostics;
 
 namespace Kudu.Client.Diagnostics
 {

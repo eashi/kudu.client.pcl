@@ -6,7 +6,7 @@ using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Kudu.Client.Infrastructure;
-using Kudu.Core.Deployment;
+using Kudu.Core.PCL.Deployment;
 
 namespace Kudu.Client.Deployment
 {

@@ -2,7 +2,7 @@
 using System.Net.Http;
 using System.Threading.Tasks;
 using Kudu.Client.Infrastructure;
-using Kudu.Services.Diagnostics;
+using Kudu.Services.PCL.Diagnostics;
 
 namespace Kudu.Client.Diagnostics
 {
