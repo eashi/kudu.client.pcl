@@ -46,8 +46,6 @@
     <Compile Include="Deployment\DeployStatus.cs" />
     <Compile Include="Deployment\IAutoSwapHandler.cs" />
     <Compile Include="Deployment\IDeploymentEnvironment.cs" />
-    <Compile Include="Deployment\IDeploymentManager.cs" />
-    <Compile Include="Deployment\IDeploymentManagerFactory.cs" />
     <Compile Include="Deployment\IDeploymentStatusFile.cs" />
     <Compile Include="Deployment\IDeploymentStatusManager.cs" />
     <Compile Include="Deployment\ILogger.cs" />
@@ -66,7 +64,6 @@
     <Compile Include="Hooks\WebHook.cs" />
     <Compile Include="IEnvironment.cs" />
     <Compile Include="Infrastructure\IOperationLock.cs" />
-    <Compile Include="Infrastructure\LockExtensions.cs" />
     <Compile Include="Infrastructure\LockOperationException.cs" />
     <Compile Include="Infrastructure\RS.cs" />
     <Compile Include="Infrastructure\StringUtils.cs" />
@@ -82,7 +79,6 @@
     <Compile Include="Jobs\TriggeredJobHistory.cs" />
     <Compile Include="Jobs\TriggeredJobRun.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Settings\DeploymentSettingsExtension.cs" />
     <Compile Include="Settings\DiagnosticsSettings.cs" />
     <Compile Include="Settings\IDeploymentSettingsManager.cs" />
     <Compile Include="Settings\ISettingsProvider.cs" />
@@ -91,9 +87,6 @@
     <Compile Include="SiteExtensions\SiteExtensionInfo.cs" />
     <Compile Include="SourceControl\ChangeSet.cs" />
     <Compile Include="SourceControl\Git\IGitServer.cs" />
-    <Compile Include="SourceControl\IFileFinder.cs" />
-    <Compile Include="SourceControl\IRepository.cs" />
-    <Compile Include="SourceControl\IRepositoryFactory.cs" />
     <Compile Include="SourceControl\RepositoryInfo.cs" />
     <Compile Include="SourceControl\RepositoryType.cs" />
     <Compile Include="SourceControl\ScmType.cs" />
