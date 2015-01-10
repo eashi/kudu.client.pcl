@@ -42,13 +42,13 @@ namespace Kudu.Client.Editor
         }
 
 
-        public void PutZipFile(string path, string localZipPath)
-        {
-            using (var stream = File.OpenRead(localZipPath))
-            {
-                PutZipStream(path, stream);
-            }
-        }
+        //public void PutZipFile(string path, string localZipPath)
+        //{
+        //    using (var stream = File.OpenRead(localZipPath))
+        //    {
+        //        PutZipStream(path, stream);
+        //    }
+        //}
     }
 }
 
