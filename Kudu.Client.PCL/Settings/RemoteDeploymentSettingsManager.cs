@@ -1,4 +1,5 @@
 ﻿using Kudu.Client.Infrastructure;
+using Kudu.Client.PCL;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -77,4 +78,6 @@ namespace Kudu.Client.Deployment
             await Client.DeleteSafeAsync(key);
         }
     }
+
+    //inspired by http://stackoverflow.com/questions/20268544/portable-class-library-pcl-version-of-httputility-parsequerystring
 }

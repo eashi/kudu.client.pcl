@@ -3,6 +3,7 @@ using System.Collections.Specialized;
 using System.Net;
 using System.Threading.Tasks;
 using Kudu.Client.Infrastructure;
+using Kudu.Client.PCL;
 using Newtonsoft.Json.Linq;
 
 namespace Kudu.Client.Deployment
