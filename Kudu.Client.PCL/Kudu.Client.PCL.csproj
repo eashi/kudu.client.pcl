@@ -44,6 +44,7 @@
     <Compile Include="Editor\RemoteVfsManager.cs" />
     <Compile Include="Hooks\RemoteWebHooksManager.cs" />
     <Compile Include="Infrastructure\BasicAuthCredentialProvider.cs" />
+    <Compile Include="Infrastructure\CredentialList.cs" />
     <Compile Include="Infrastructure\HttpClientExtensions.cs" />
     <Compile Include="Infrastructure\HttpClientHelper.cs" />
     <Compile Include="Infrastructure\HttpResponseMessageExtensions.cs" />

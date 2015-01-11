@@ -45,10 +45,11 @@ namespace Kudu.Client.Infrastructure
             if (credentials != null)
             {
                 // Set up credentials cache which will handle basic authentication
-                CredentialCache credentialCache = new CredentialCache();
+                CredentialList credentialCache = new CredentialList();
 
                 // Get base address without terminating slash
-                string credentialAddress = new Uri(serviceUrl).GetLeftPart(UriPartial.Authority).TrimEnd(uriPathSeparator);
+                var serviceUri = new Uri(serviceUrl);
+                string credentialAddress = serviceUri.Authority.TrimEnd(uriPathSeparator);
 
                 // Add credentials to cache and associate with handler
                 NetworkCredential networkCredentials = credentials.GetCredential(new Uri(credentialAddress), "Basic");
