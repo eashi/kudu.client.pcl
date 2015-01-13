@@ -49,11 +49,11 @@ namespace Kudu.Client.Infrastructure
 
                 // Get base address without terminating slash
                 var serviceUri = new Uri(serviceUrl);
-                string credentialAddress = serviceUri.Authority.TrimEnd(uriPathSeparator);
-
+                
                 // Add credentials to cache and associate with handler
-                NetworkCredential networkCredentials = credentials.GetCredential(new Uri(credentialAddress), "Basic");
-                credentialCache.Add(new Uri(credentialAddress), "Basic", networkCredentials);
+                // Working with concrete implementation of ICredentials, until otherwise needed
+                NetworkCredential networkCredentials = (NetworkCredential)credentials;
+                credentialCache.Add(serviceUri, "basic", networkCredentials);
                 clientHandler.Credentials = credentialCache;
                 clientHandler.PreAuthenticate = true;
             }
