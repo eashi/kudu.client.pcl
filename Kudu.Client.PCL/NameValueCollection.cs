@@ -5,6 +5,7 @@ using System.Linq;
 
 namespace Kudu.Client.PCL
 {
+    // Inspired by Rehan Saeed from http://stackoverflow.com/questions/20268544/portable-class-library-pcl-version-of-httputility-parsequerystring
     public class NameValueCollection
     {
         private Collection<KeyValuePair<string, string>> _collection;
@@ -18,8 +19,8 @@ namespace Kudu.Client.PCL
         {
             get
             {
-                var keyValuePairInCollection = _collection.FirstOrDefault(kvp => kvp.Key.Equals(key, StringComparison.CurrentCultureIgnoreCase));
-                return keyValuePairInCollection.ToString();
+                var keyValuePairInCollection = _collection.Where(kvp => kvp.Key.Equals(key, StringComparison.CurrentCultureIgnoreCase));
+                return keyValuePairInCollection.Select(k => k.Value).Aggregate((first, second) => string.Format("{0}, {1}", first, second));
             }
             set
             {
