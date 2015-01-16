@@ -32,5 +32,10 @@ namespace Kudu.Client.PCL
                 _collection.Add(new KeyValuePair<string, string>(key, value));
             }
         }
+
+        public string[] GetValues(string key)
+        {
+            return _collection.Where(kvp => kvp.Key.Equals(key, StringComparison.CurrentCultureIgnoreCase)).Select(kv => kv.Value).ToArray();
+        }
     }
 }
