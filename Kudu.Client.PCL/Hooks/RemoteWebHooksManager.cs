@@ -17,7 +17,7 @@ namespace Kudu.Client.Diagnostics
 
         public Task<IEnumerable<WebHook>> GetWebHooksAsync()
         {
-            return Client.GetJsonAsync<IEnumerable<WebHook>>(String.Empty);
+            return Client.GetJsonAsync<IEnumerable<WebHook>>("api/hooks");
         }
 
         public Task<WebHook> GetWebHookAsync(string hookId)
