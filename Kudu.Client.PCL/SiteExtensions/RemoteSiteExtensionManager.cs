@@ -4,11 +4,11 @@ using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-using Kudu.Client.Infrastructure;
+using Kudu.Client.PCL.Infrastructure;
 using Kudu.Contracts.PCL.SiteExtensions;
 using Newtonsoft.Json.Linq;
 
-namespace Kudu.Client.SiteExtensions
+namespace Kudu.Client.PCL.SiteExtensions
 {
     public class RemoteSiteExtensionManager : KuduRemoteClientBase
     {

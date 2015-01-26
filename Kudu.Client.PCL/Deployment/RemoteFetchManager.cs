@@ -2,10 +2,10 @@
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Kudu.Client.Infrastructure;
-using Kudu.Core.PCL.SourceControl;
+using Kudu.Client.PCL.Infrastructure;
+using Kudu.Contracts.PCL.SourceControl;
 
-namespace Kudu.Client.Deployment
+namespace Kudu.Client.PCL.Deployment
 {
     public class RemoteFetchManager : KuduRemoteClientBase
     {

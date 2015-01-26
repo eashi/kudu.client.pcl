@@ -1,4 +1,4 @@
-﻿namespace Kudu.Core.PCL.Deployment
+﻿namespace Kudu.Contracts.PCL.Deployment
 {
     public enum LogEntryType
     {

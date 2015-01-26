@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace Kudu.Core.PCL.SourceControl.Git
+namespace Kudu.Contracts.PCL.SourceControl.Git
 {
     public interface IGitServer
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace Kudu.Core.PCL.Deployment
+namespace Kudu.Contracts.PCL.Deployment
 {
     public class LogEntry
     {

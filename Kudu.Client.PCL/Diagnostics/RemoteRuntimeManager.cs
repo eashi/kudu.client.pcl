@@ -1,10 +1,10 @@
 ﻿using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Kudu.Client.Infrastructure;
-using Kudu.Services.PCL.Diagnostics;
+using Kudu.Client.PCL.Infrastructure;
+using Kudu.Contracts.PCL.Diagnostics;
 
-namespace Kudu.Client.Diagnostics
+namespace Kudu.Client.PCL.Diagnostics
 {
     public class RemoteRuntimeManager : KuduRemoteClientBase
     {

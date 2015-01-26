@@ -1,8 +1,7 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-
-namespace Kudu.Core.PCL.Diagnostics
+namespace Kudu.Contracts.PCL.Diagnostics
 {
     [JsonObject()]
     public class ProcessModuleInfo

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Kudu.Client.Infrastructure
+namespace Kudu.Client.PCL.Infrastructure
 {
     public static class UrlUtility
     {

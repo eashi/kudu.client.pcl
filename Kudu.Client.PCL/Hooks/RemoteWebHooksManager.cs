@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Kudu.Client.Infrastructure;
-using Kudu.Core.PCL.Hooks;
+using Kudu.Client.PCL.Infrastructure;
+using Kudu.Contracts.PCL.Hooks;
 
-namespace Kudu.Client.Diagnostics
+namespace Kudu.Client.PCL.Hooks
 {
     public class RemoteWebHooksManager : KuduRemoteClientBase
     {

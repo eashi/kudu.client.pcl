@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Kudu.Core.PCL.SourceControl
+namespace Kudu.Contracts.PCL.SourceControl
 {
     public class ChangeSet
     {

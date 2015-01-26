@@ -1,7 +1,7 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace Kudu.Core.PCL.Hooks
+namespace Kudu.Contracts.PCL.Hooks
 {
     public class WebHook
     {

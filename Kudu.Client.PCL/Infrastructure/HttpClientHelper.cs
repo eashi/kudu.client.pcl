@@ -6,7 +6,7 @@ using System.Net.Http.Formatting;
 using System.Net.Http.Headers;
 using Newtonsoft.Json.Linq;
 
-namespace Kudu.Client.Infrastructure
+namespace Kudu.Client.PCL.Infrastructure
 {
     public static class HttpClientHelper
     {

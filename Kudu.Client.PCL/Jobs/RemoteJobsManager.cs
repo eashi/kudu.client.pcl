@@ -2,7 +2,7 @@
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Kudu.Client.Infrastructure;
+using Kudu.Client.PCL.Infrastructure;
 using Kudu.Contracts.PCL.Jobs;
 
 namespace Kudu.Client.PCL.Jobs

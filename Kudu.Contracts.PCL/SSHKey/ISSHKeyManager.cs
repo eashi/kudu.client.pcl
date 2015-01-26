@@ -1,5 +1,5 @@
 ﻿
-namespace Kudu.Core.PCL.SSHKey
+namespace Kudu.Contracts.PCL.SSHKey
 {
     public interface ISSHKeyManager
     {

@@ -1,4 +1,4 @@
-﻿namespace Kudu.Core.PCL.SourceControl
+﻿namespace Kudu.Contracts.PCL.SourceControl
 {
     public enum RepositoryType
     {

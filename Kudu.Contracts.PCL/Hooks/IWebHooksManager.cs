@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Kudu.Core.PCL.Hooks
+namespace Kudu.Contracts.PCL.Hooks
 {
     public interface IWebHooksManager
     {

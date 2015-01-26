@@ -1,7 +1,6 @@
 ﻿using System;
-using Newtonsoft.Json;
 
-namespace Kudu.Core.PCL.SourceControl
+namespace Kudu.Contracts.PCL.SourceControl
 {
     public class RepositoryInfo
     {

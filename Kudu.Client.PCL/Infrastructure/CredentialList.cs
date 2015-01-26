@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Net;
 
-namespace Kudu.Client.Infrastructure
+namespace Kudu.Client.PCL.Infrastructure
 {
     public class CredentialList : ICredentials
     {

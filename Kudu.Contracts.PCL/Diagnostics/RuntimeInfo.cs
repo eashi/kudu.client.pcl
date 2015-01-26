@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace Kudu.Services.PCL.Diagnostics
+namespace Kudu.Contracts.PCL.Diagnostics
 {
     public class RuntimeInfo
     {

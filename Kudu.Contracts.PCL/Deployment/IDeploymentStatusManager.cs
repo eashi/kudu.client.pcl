@@ -1,7 +1,7 @@
 ﻿using System;
 using Kudu.Contracts.PCL.Infrastructure;
 
-namespace Kudu.Core.PCL.Deployment
+namespace Kudu.Contracts.PCL.Deployment
 {
     public interface IDeploymentStatusManager
     {

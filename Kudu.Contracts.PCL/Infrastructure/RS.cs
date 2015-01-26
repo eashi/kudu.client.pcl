@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace Kudu.Common
+namespace Kudu.Contracts.PCL.Infrastructure
 {
     /// <summary>
     /// Utility class for string resources.

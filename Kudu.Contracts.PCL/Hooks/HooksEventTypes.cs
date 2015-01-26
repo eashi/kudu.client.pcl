@@ -1,4 +1,4 @@
-﻿namespace Kudu.Core.PCL.Hooks
+﻿namespace Kudu.Contracts.PCL.Hooks
 {
     public static class HookEventTypes
     {

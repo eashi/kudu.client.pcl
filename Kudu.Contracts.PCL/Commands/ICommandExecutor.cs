@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Kudu.Core.PCL.Commands
+namespace Kudu.Contracts.PCL.Commands
 {
     public interface ICommandExecutor
     {

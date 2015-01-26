@@ -1,4 +1,4 @@
-﻿namespace Kudu.Client.Infrastructure
+﻿namespace Kudu.Client.PCL.Infrastructure
 {
     public interface IEventProvider
     {

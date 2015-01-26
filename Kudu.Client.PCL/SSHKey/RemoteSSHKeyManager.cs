@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
-using Kudu.Client.Infrastructure;
+using Kudu.Client.PCL.Infrastructure;
 
-namespace Kudu.Client.SSHKey
+namespace Kudu.Client.PCL.SSHKey
 {
     public class RemoteSSHKeyManager : KuduRemoteClientBase
     {

@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Specialized;
 using System.Net;
 using System.Threading.Tasks;
-using Kudu.Client.Infrastructure;
-using Kudu.Client.PCL;
+using Kudu.Client.PCL.Infrastructure;
 using Newtonsoft.Json.Linq;
 
-namespace Kudu.Client.Deployment
+namespace Kudu.Client.PCL.Settings
 {
     /// <summary>
     /// This class is used for testing the legacy settings API

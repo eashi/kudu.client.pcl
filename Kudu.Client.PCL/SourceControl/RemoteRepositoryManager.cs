@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Net;
-using System.Net.Http;
 using System.Threading.Tasks;
-using Kudu.Client.Infrastructure;
-using Kudu.Core.PCL.SourceControl;
+using Kudu.Client.PCL.Infrastructure;
+using Kudu.Contracts.PCL.SourceControl;
 
-namespace Kudu.Client.SourceControl
+namespace Kudu.Client.PCL.SourceControl
 {
     public class RemoteRepositoryManager : KuduRemoteClientBase
     {

@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using Newtonsoft.Json;
 
-namespace Kudu.Core.PCL.Deployment
+namespace Kudu.Contracts.PCL.Deployment
 {
     [DebuggerDisplay("{Id} {Status}")]
     public class DeployResult

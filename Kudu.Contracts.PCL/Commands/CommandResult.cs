@@ -1,4 +1,4 @@
-﻿namespace Kudu.Core.PCL
+﻿namespace Kudu.Contracts.PCL.Commands
 {
     public class CommandResult
     {

@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace Kudu.Client.Infrastructure
+namespace Kudu.Client.PCL.Infrastructure
 {
     public interface ICredentialProvider
     {

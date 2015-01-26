@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Kudu.Client.Infrastructure;
-using Kudu.Core.PCL.Deployment;
+using Kudu.Client.PCL.Infrastructure;
+using Kudu.Contracts.PCL.Deployment;
 
-namespace Kudu.Client.Deployment
+namespace Kudu.Client.PCL.Deployment
 {
     public class RemoteDeploymentManager : KuduRemoteClientBase
     {

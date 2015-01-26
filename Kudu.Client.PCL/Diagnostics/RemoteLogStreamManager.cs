@@ -2,7 +2,6 @@
 using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Kudu.Client.Infrastructure;
 
 #if _STREAM_CLIENT_SUPPORT
 namespace Kudu.Client.Diagnostics

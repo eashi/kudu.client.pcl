@@ -1,14 +1,11 @@
-﻿using Kudu.Client.Infrastructure;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
+using Kudu.Client.PCL.Infrastructure;
 using Kudu.Contracts.PCL.Diagnostics;
 
-namespace Kudu.Client.Diagnostics
+namespace Kudu.Client.PCL.Diagnostics
 {
     public class RemoteLogFilesManager : KuduRemoteClientBase
     {

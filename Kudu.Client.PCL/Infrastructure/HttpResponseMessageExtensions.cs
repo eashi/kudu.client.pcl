@@ -2,7 +2,7 @@
 using System.Net;
 using System.Net.Http;
 
-namespace Kudu.Client
+namespace Kudu.Client.PCL.Infrastructure
 {
     public static class HttpResponseMessageExtensions
     {

@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.Specialized;
 using System.Diagnostics;
 using Newtonsoft.Json;
 
-namespace Kudu.Core.PCL.Diagnostics
+namespace Kudu.Contracts.PCL.Diagnostics
 {
     [DebuggerDisplay("{Id} {Name}")]
     public class ProcessInfo

@@ -3,9 +3,9 @@ using System.IO;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using Kudu.Client.Infrastructure;
+using Kudu.Client.PCL.Infrastructure;
 
-namespace Kudu.Client.Editor
+namespace Kudu.Client.PCL.Zip
 {
     public class RemoteZipManager : KuduRemoteClientBase
     {

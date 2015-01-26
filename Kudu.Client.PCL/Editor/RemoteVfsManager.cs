@@ -5,10 +5,10 @@ using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
-using Kudu.Client.Infrastructure;
+using Kudu.Client.PCL.Infrastructure;
 using Kudu.Contracts.PCL.Editor;
 
-namespace Kudu.Client.Editor
+namespace Kudu.Client.PCL.Editor
 {
     public class RemoteVfsManager : KuduRemoteClientBase
     {

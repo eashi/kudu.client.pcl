@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Kudu.Core.PCL.Hooks
+namespace Kudu.Contracts.PCL.Hooks
 {
     public class ConflictException : InvalidOperationException
     {
