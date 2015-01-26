@@ -22,23 +22,28 @@ namespace Kudu.Client.Diagnostics
 
         public Task<WebHook> GetWebHookAsync(string hookId)
         {
-            return Client.GetJsonAsync<WebHook>(hookId);
+            return Client.GetJsonAsync<WebHook>(BuildUrl(hookId));
         }
 
         public async Task<WebHook> SubscribeAsync(WebHook webHook)
         {
-            return await Client.PostJsonAsync<WebHook, WebHook>(String.Empty, webHook);
+            return await Client.PostJsonAsync<WebHook, WebHook>(BuildUrl(), webHook);
         }
 
         public async Task PublishEventAsync<T>(string hookEventType, T eventContent)
         {
-            await Client.PostJsonAsync<T, object>("publish/" + hookEventType, eventContent);
+            await Client.PostJsonAsync<T, object>(BuildUrl("publish", hookEventType), eventContent);
         }
 
         public async Task UnsubscribeAsync(string hookId)
         {
             HttpResponseMessage response = await Client.DeleteAsync(hookId);
             response.EnsureSuccessful();
+        }
+
+        private string BuildUrl(params string[] parameters)
+        {
+            return "api/hooks/" + String.Join("/", parameters);
         }
     }
 }
