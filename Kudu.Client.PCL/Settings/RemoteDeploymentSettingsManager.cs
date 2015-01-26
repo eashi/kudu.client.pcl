@@ -21,16 +21,21 @@ namespace Kudu.Client.Deployment
         {
             using (var values = HttpClientHelper.CreateJsonContent(new KeyValuePair<string, string>("key", key), new KeyValuePair<string, string>("value", value)))
             {
-                HttpResponseMessage response = await Client.PostAsync(String.Empty, values);
+                HttpResponseMessage response = await Client.PostAsync(BuildUrl(), values);
                 response.EnsureSuccessful();
             }
+        }
+
+        private string BuildUrl(params string[] parameters)
+        {
+            return "api/settings/" + String.Join("/", parameters);  
         }
 
         public async Task SetValue(string key, string value)
         {
             using (var values = HttpClientHelper.CreateJsonContent(new KeyValuePair<string, string>(key, value)))
             {
-                HttpResponseMessage response = await Client.PostAsync(String.Empty, values);
+                HttpResponseMessage response = await Client.PostAsync(BuildUrl(), values);
                 response.EnsureSuccessful();
             }
         }
@@ -39,7 +44,7 @@ namespace Kudu.Client.Deployment
         {
             using (var jsonvalues = HttpClientHelper.CreateJsonContent(values))
             {
-                HttpResponseMessage response = await Client.PostAsync(String.Empty, jsonvalues);
+                HttpResponseMessage response = await Client.PostAsync(BuildUrl(), jsonvalues);
                 response.EnsureSuccessful();
             }
         }
@@ -57,7 +62,7 @@ namespace Kudu.Client.Deployment
 
         public async Task<NameValueCollection> GetValues()
         {
-            var obj = await Client.GetJsonAsync<JObject>("?version=2");
+            var obj = await Client.GetJsonAsync<JObject>(BuildUrl("?version=2"));
 
             var nvc = new NameValueCollection();
             foreach (var pair in obj)
@@ -70,14 +75,12 @@ namespace Kudu.Client.Deployment
 
         public async Task<string> GetValue(string key)
         {
-            return await Client.GetJsonAsync<string>(key);
+            return await Client.GetJsonAsync<string>(BuildUrl(key));
         }
 
         public async Task Delete(string key)
         {
-            await Client.DeleteSafeAsync(key);
+            await Client.DeleteSafeAsync(BuildUrl(key));
         }
     }
-
-    //inspired by http://stackoverflow.com/questions/20268544/portable-class-library-pcl-version-of-httputility-parsequerystring
 }
