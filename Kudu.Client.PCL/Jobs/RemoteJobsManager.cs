@@ -14,10 +14,11 @@ namespace Kudu.Client.PCL.Jobs
         {
         }
 
-        public Task<IEnumerable<JobBase>> ListAllJobs()
-        {
-            return Client.GetJsonAsync<IEnumerable<JobBase>>("api/webjobs");
-        }
+        //This is commented out because it needs custom JsonConverter to cater for the polymorphic nature
+        //public Task<IEnumerable<JobBase>> ListAllJobs()
+        //{
+        //    return Client.GetJsonAsync<IEnumerable<JobBase>>("api/webjobs");
+        //}
 
         public Task<IEnumerable<ContinuousJob>> ListContinuousJobsAsync()
         {
